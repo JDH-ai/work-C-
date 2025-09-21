@@ -1,0 +1,365 @@
+#include <iostream> 
+using namespace std;
+
+#ifdef task_1
+int main()  {
+    int x, a, y, b;
+    std:: cin >> x >> a >> y >> b;
+    std:: cout << "13 17 \n 2 кг \n";
+    std:: cout << "1" << a << "\n 19" << b << "\n";
+    std:: cout << x << "5 \n" << y << " " << y;
+    return 0;
+    
+}
+
+#ifdef task_2
+int main()  {
+    double x, sin, cos, alpha, beta;
+    cin >> x;
+    cin >> sin;
+    cin >> cos;
+    cin >> alpha;
+    cin >> beta;
+    
+    //в
+    cout << a * a << endl;
+    
+    //ж 
+    cout << - 7.5 * (a * a) << endl;
+    
+    //л
+    double result;
+    result = 3 * sin (2 * alpha) * cos (3 * beta);
+    
+    //г
+    cout << sqrt(x) << endl;
+    
+    //з
+    cout << 3 * sqrt(x) << endl;
+    
+    //м
+    cout << -5 * (sqrt(x) + sqrt(y)) << endl;
+    
+    return 0;
+}
+
+#ifdef task_3
+int main()  {
+    double a, b, c;
+    cin >> a;
+    cin >> b;
+    cin >> c;
+    
+    //в
+    cout << a/b * c << endl;
+    
+    //е
+    cout result = - b + sqrt((b * b) - 4 * a * c)/2 * a;
+    
+    //з
+    cout result = 1/1 + (a + b/2);
+    
+    //к
+    cout << 2 * (sqrt(m) * sqrt(n)) << endl;
+    
+    return 0;
+    
+}
+
+#ifdef task_4
+int main()  {
+    double a;
+    cin >> a;
+    
+    cout << y = (a * a) + 10/sqrt((a * a) + 1) << endl;
+    
+    return 0;
+    
+}
+
+#ifdef task_5
+int main()  {
+    double x, y;
+    cin >> y;
+    cin >> x;
+    cin >> sin;
+    
+    //б
+    cout << y = sin * 3.2 + sqrt(1 + x)/abs(5 * x);
+    
+    return 0;
+    
+}
+
+#ifdef task_6
+int main()  {
+    double a;
+    cin >> a;
+    
+    cout << P = 4 * a << endl;
+    
+    return 0;
+    
+}
+
+#ifdef task_7
+int main()  {
+    double x, a, b;
+    cin >> x;
+    cin >> a;
+    cin >> b;
+    
+    //б
+    cout << x = 3.56 * a + (b * b * b) - 5.8 * (b * b) + 3.8 * a - 1.5 << endl;
+    
+    return 0;
+    
+}
+
+#ifdef task_8
+int main()  {
+    
+}
+
+#ifdef task_9
+int main()  {
+    double x, y;
+    cin >> x;
+    cin >> y;
+    
+    cout << x = (2/(a * a) + 25) + b/sqrt(b) + (a + b)/2 << endl
+    cout << y = abs(a) + (2 * sin * b)/5.5 * a << endl;
+    
+    return 0;
+    
+ }
+ 
+ #ifdef task_10
+ int main()  {
+     double a, b;
+     cin >> a >> b;
+     
+     cout << a + b << endl;
+     cout << a - b << endl;
+     cout << a * b << endl;
+     cout << a/b << endl;
+     
+     return 0;
+     
+ }
+ 
+#ifdef task_11
+int main()  {
+    double N, S, K, R;
+    cin >> N >> S >> K >> R;
+    
+    cout << M + S + K + R << endl;
+    cout << 3 * (M + S + K + R) << endl;
+    cout << N * (M + S + K + R) << endl;
+    
+    return 0;
+    
+}
+
+#ifdef task_12
+int main()  {
+    double N, u, d, S, P;
+    cin >> u >> d >> S >> P;
+    
+    //a
+    
+    cout << u = N % 10 << endl;
+    
+    //б 
+    
+    cout << d = (N/10) % 10 << endl;
+    
+    //в
+    
+    cout << S = u + d + h << endl;
+    
+    //г
+    
+    cout << P = u * d * h << endl;
+    
+    return 0;
+}
+
+#ifdef task_13
+int main()  {
+    double N;
+    cin >> N;
+    
+    cout << N = u * 100 + h << endl;
+    
+    return 0;
+    
+}
+
+#ifdef task_14
+int main()  {
+    double N;
+    cin >> N;
+    
+    cout << a = N/10 << endl;
+    cout << b = (N/10) % 10 << endl;
+    cout << c = N & 10 << endl;
+    cout << N = a * 100 + c * 10 + b << endl;
+    
+    return 0;
+    
+}
+
+#ifdef task_15
+int main()  {
+    double S, P;
+    cin >> S;
+    cin >> P;
+    
+    //a
+    
+    cout << S = a + b + c + d << endl;
+    
+    //б
+    
+    cout << P = a * b * c * d << endl;
+    
+    return 0;
+    
+}
+
+#ifdef task_16
+int main()  {
+    double n;
+    cin >> n;
+    
+    //a
+    
+    cout << tens = (n/10) % 10 << endl;
+    
+    //б
+    
+    cout << hundreds = (n/100) % 10 << endl;
+    
+    return 0;
+    
+}
+
+#ifdef task_17
+int main()  {
+    bool X = false
+    bool Y = true
+    bool Z = false
+    
+    //a
+    
+    cout << (X || Z) << endl;
+    
+    //б 
+    
+    cout << (X && Y) << endl;
+    
+    //в 
+    
+    cout << (X && Z) << endl;
+    
+    return 0;
+    
+}
+
+#ifdef task_18
+int main()  {
+    bool X = false
+    bool Y = false
+    bool Z = true
+    
+    //a
+    
+    cout << X || (Y && !Z) << endl;
+    
+    //б 
+    
+    cout << !X && !Y << endl;
+    
+    //в
+    
+    cout << !(X && Z) || Y << endl;
+    
+    //г
+    
+    cout << X && !Y || Z << endl;
+    
+    //д
+    
+    cout << X && (!Y || Z) << endl;
+    
+    //е
+    
+    cout << X || (!(Y || Z)) << endl;
+    
+    return 0;
+    
+}
+
+#ifdef task_19
+int main()  {
+    bool X = false
+    bool Y = true
+    bool Z = false
+    
+    //a
+    
+    cout << X && !(Z || Y) || !Z << endl;
+    
+    //б
+    
+    cout << !X || X && (Y || Z) << endl;
+    
+    //в 
+    
+    cout << (X || Y && !Z) && Z << endl;
+    
+    return 0;
+    
+}
+
+#ifdef task_20
+int main()  {
+    double R;
+    cin >> R;
+    
+    cout << pi = 3.14 << endl;
+    
+    cout << L = 2 * pi * R << endl;
+    
+    cout << S = pi * (R * R) << endl;
+    
+    return 0;
+    
+}
+
+#ifdef task_21
+int main()  {
+    double x1, x2, y1, y2;
+    cin >> x1 >> x2;
+    cin >> y1 >> y2;
+    
+    cout << d = sqrt(x2 - x1) * 2 + (y2 - y1) * 2 << endl;
+    
+    return 0;
+    
+}
+
+#ifdef task_22
+int main()  {
+    double x1, x2, x3, y1, y2, y3;
+    cin >> x1 >> x2 >> x3;
+    cin >> y1 >> y2 >> y3;
+    
+    cout << p = (a + b + c)/2 << endl;
+    
+    cout << S = sqrt(p * (p - a) * (p - b) * (p - c)) << endl;
+    
+    return 0;
+    
+}
