@@ -1,0 +1,23 @@
+#include <iostream>
+using std::cin;
+using std::cout;
+using std::endl;
+
+//ifdef task_1
+int main() {
+    int N;
+    cout << "Введи любое положительное число" << endl;
+    cin >> N;
+    
+    int summ = 0;
+    
+    for (int i = 1; i <= N; i++) {
+        summ = summ + i;
+    }
+    
+    cout << "Сумма чисел от 1 и до " << N << " = " << summ << endl;
+    
+    return 0;
+}
+
+//endif
