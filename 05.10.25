@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-//ifdef task_1
+//#ifdef task_1
 int main() {
     int N;
     cout << "Введи любое положительное число" << endl;
@@ -18,9 +18,9 @@ int main() {
     return 0;
 }
 
-//endif
+//#endif
 
-//ifdef task_2
+//#ifdef task_2
 int main() {
     const double ocean = 1.5;
     
@@ -35,5 +35,19 @@ int main() {
     return 0;
 }
 
-//endif
+//#endif
 
+//#ifdef task_3
+int main() {
+    
+    const double caloriesperminute = 3.6;
+    
+    for (int min = 5; min <= 30; min += 5) {
+        cout << "За " << min << " минут вы сожгли " << min * caloriesperminute << " калорий " << endl;
+    }
+    
+    return 0;
+    
+}
+    
+//#endif
