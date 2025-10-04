@@ -1,7 +1,5 @@
 #include <iostream>
-using std::cin;
-using std::cout;
-using std::endl;
+using namespace std;
 
 //ifdef task_1
 int main() {
@@ -21,3 +19,21 @@ int main() {
 }
 
 //endif
+
+//ifdef task_2
+int main() {
+    const double ocean = 1.5;
+    
+    cout << "Год   Уровень океана (в мм)" << endl;
+    double height = 0.0;
+    
+    for (int i = 1; i <= 25; i++) {
+        height += ocean;
+        cout << i << "     " << height << endl;
+    }
+    
+    return 0;
+}
+
+//endif
+
