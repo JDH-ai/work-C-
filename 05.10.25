@@ -51,3 +51,33 @@ int main() {
 }
     
 //#endif
+
+//#ifdef task_4
+int main() {
+    double speed;
+    int time;
+    
+    cout << "Напиши скорость транспортного средства (в милях в час)" << endl;
+    cin >> speed;
+    
+    cout << "Напиши количество часов, сколько ехало транспортное средство" << endl;
+    cin >> time;
+    
+    if (speed < 0 || time < 1) {
+        cout << "Ошибка" << endl;
+    } else {
+        cout << "Пройденное расстояние (в милях)     время" << endl;
+        
+        for (int i = 1; i <= time; i++) {
+            double distance = speed * i;
+            cout << i << "                                    "<< distance << endl;
+        }
+        
+        return 0;
+    }
+    
+}
+    
+//#endif
+
+
