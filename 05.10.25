@@ -182,3 +182,53 @@ int main() {
 } 
 
 //#endif
+
+//#ifdef task_8
+int main() {
+    double summ;
+    cout << "Введи сумму, заложенную в бюджет на месяц" << endl;
+    cin >> summ;
+    
+    while (summ < 0) {
+        cout << "Ошибка. Сумма, заложенная в бюджет, не может быть отрицательной. Введи сумму снова" << endl;
+        cin >> summ;
+    }
+    
+    double expense;
+    double result = 0;
+    
+    cout << "Для завершения операции нажми 0" << endl;
+    
+    while (1) {
+        cout << "Введи свой расход" << endl;
+        cin >> expense;
+        
+        if (expense == 0)
+        break;
+        
+        while (expense < 0) {
+            cout << "Ошибка. Расход не может быть отрицательным. Введи расход снова" << endl;
+            cin >> expense;
+        }
+        
+        result += expense;
+        
+    }
+    
+    double difference = summ - result;
+    
+    cout << "       Результат       " << endl;
+    cout << "Ваш бюджет: " << summ << endl;
+    cout << "Ваши расходы: " << result << endl;
+    
+    if (difference >= 0) {
+        cout << "Вы вышли в плюс: " << difference << endl;
+    } else {
+        cout << "Вы вышли в минус: " << - difference << endl;
+    }
+    
+    return 0;
+    
+}
+
+//#endif
