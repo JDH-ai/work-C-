@@ -233,7 +233,7 @@ int main() {
 
 #endif
 
-#ifdef task_8
+#ifdef task_9
 int main() {
     int number = 50;
     int N;
@@ -252,6 +252,40 @@ int main() {
         
     } else {
         cout << "Ты смог угадать мое загаданное число. Поздравляю" << endl;
+        break;
+        
+    }
+    
+}
+    
+    return 0;
+    
+}
+
+#endif
+
+#ifdef task_10
+int main() {
+    int number = 50;
+    int counter = 0;
+    int N;
+    
+    cout << "Я решила загадать число от 10 до 80. Хочу, чтобы ты попробовал отгадать" << endl;
+    
+    while (1) {
+        cout << "Введи любое число, которое, по-твоему мнению, я загадала" << endl;
+        cin >> N;
+        counter = counter + 1;
+        
+    if (N > number) {
+        cout << "Too high, try again" << endl;
+        
+    } else if (N < number) {
+        cout << "Too low, try again" << endl;
+        
+    } else {
+        cout << "Ты смог угадать мое загаданное число. Поздравляю" << endl;
+        cout << "Тебе понадобилось всего лишь " << counter << " попыток" << endl;
         break;
         
     }
