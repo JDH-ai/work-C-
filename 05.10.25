@@ -112,3 +112,73 @@ int main() {
 }
 
 //#endif
+
+//#ifdef task_6
+int main() {
+    int floors;
+    
+    cout << "Скажите, а сколько этажей в отеле?" << endl;
+    cin >> floors;
+    
+    int totalRooms = 0;
+    int occupiedrooms = 0;
+    int freerooms = 0;
+    
+    if (floors < 1) {
+        cout << "Извините, мы не принимаем ответ с числом этажей меньше 1" << endl;
+    } while (floors <= 0) {
+        cout << "Введи ответ с числом этажей снова" << endl;
+        cin >> floors;
+    } 
+    
+    for (int i = 1; i <= floors; i++) {
+        int floors = i;
+        while (floors == 13) {
+            cout << "13 этаж пропускается из-за суеверия. Его не существует в нашем отеле" << endl;
+            cout << "Введи ответ с числом другого этажа" << endl;
+            cin >> floors;
+            continue;
+        } 
+    }
+    
+    int rooms;
+    
+    cout << "Какое количество комнат на " << "" << "этаже?" << endl;
+    cin >> rooms;
+    
+    while (rooms < 10) {
+        cout << "На одном этаже отеля у нас находится не меньше 10 комнат" << endl;
+        cout << "Введи ответ с новым числом комнат на этаже" << endl;
+        cin >> rooms;
+        }
+    
+    cout << "Скажите, а сколько комнат занято на этом этаже?" << endl;
+    
+    int occupied;
+    cin >> occupied;
+    
+    while (occupiedrooms > rooms || occupiedrooms < 0) {
+        cout << "Занятых посетителями комнат не может быть больше, чем всех" << endl;
+        cout << "Введи число занятых посетителями комнат снова" << endl;
+        cin >> occupiedrooms;
+    }
+    
+    totalRooms += rooms;
+    occupiedrooms += occupied;
+    
+    freerooms = totalRooms - occupiedrooms;
+    double percent = (double)occupiedrooms / totalRooms * 100;
+    
+    cout << "Общее число всех комнат: " << totalRooms << endl;
+    
+    cout << "Занятые комнаты: " << occupiedrooms << endl;
+    
+    cout << "Свободные комнаты: " << freerooms << endl;
+    
+    cout << "Процент занятых (всего): " << percent << " " << endl;
+    
+    return 0;
+    
+} 
+
+//#endif
