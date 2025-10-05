@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-//#ifdef task_1
+#ifdef task_1
 int main() {
     int N;
     cout << "Введи любое положительное число" << endl;
@@ -18,9 +18,9 @@ int main() {
     return 0;
 }
 
-//#endif
+#endif
 
-//#ifdef task_2
+#ifdef task_2
 int main() {
     const double ocean = 1.5;
     
@@ -35,9 +35,9 @@ int main() {
     return 0;
 }
 
-//#endif
+#endif
 
-//#ifdef task_3
+#ifdef task_3
 int main() {
     
     const double caloriesperminute = 3.6;
@@ -50,9 +50,9 @@ int main() {
     
 }
     
-//#endif
+#endif
 
-//#ifdef task_4
+#ifdef task_4
 int main() {
     double speed;
     int time;
@@ -78,9 +78,9 @@ int main() {
     
 }
     
-//#endif
+#endif
 
-//#ifdef task_5
+#ifdef task_5
 int main() {
     int days;
     
@@ -111,9 +111,9 @@ int main() {
     
 }
 
-//#endif
+#endif
 
-//#ifdef task_6
+#ifdef task_6
 int main() {
     int floors;
     
@@ -181,9 +181,9 @@ int main() {
     
 } 
 
-//#endif
+#endif
 
-//#ifdef task_8
+#ifdef task_8
 int main() {
     double summ;
     cout << "Введи сумму, заложенную в бюджет на месяц" << endl;
@@ -231,4 +231,35 @@ int main() {
     
 }
 
-//#endif
+#endif
+
+#ifdef task_8
+int main() {
+    int number = 50;
+    int N;
+    
+    cout << "Я решила загадать число от 10 до 80. Хочу, чтобы ты попробовал отгадать" << endl;
+    
+    while (1) {
+        cout << "Введи любое число, которое, по-твоему мнению, я загадала" << endl;
+        cin >> N;
+        
+    if (N > number) {
+        cout << "Too high, try again" << endl;
+        
+    } else if (N < number) {
+        cout << "Too low, try again" << endl;
+        
+    } else {
+        cout << "Ты смог угадать мое загаданное число. Поздравляю" << endl;
+        break;
+        
+    }
+    
+}
+    
+    return 0;
+    
+}
+
+#endif
