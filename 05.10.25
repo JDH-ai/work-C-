@@ -80,4 +80,35 @@ int main() {
     
 //#endif
 
+//#ifdef task_5
+int main() {
+    int days;
+    
+    cout << "Введи количество дней, которое ты работал" << endl;
+    cin >> days;
+    
+    if (days < 1) {
+        cout << "Произошла ошибка. Дней не может быть меньше одного" << endl;
+    } else {
+        double penny = 1;
+        double total = 0;
+        
+        cout << "День          ваш заработок (в долларах)" << endl;
+        
+        for (int i = 1; i <= days; i++) {
+            double dollars = penny / 100;
+            
+            cout << i << "              " << dollars << endl;
+            
+            total = total + penny;
+            penny = penny * 2;
+        }
+        
+        cout << "Общая сумма вашего заработка:  " << total / 100 << " долларов" << endl;
+    }
+    
+    return 0;
+    
+}
 
+//#endif
