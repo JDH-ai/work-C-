@@ -192,3 +192,94 @@ int main() {
     
 //#endif
 
+//#ifdef task_5
+int main() {
+    int n;
+    
+    cout << "Введите количество чисел, что находятся в вашем массиве" << endl;
+    
+    cin >> n;
+    
+    int arr[40];
+    
+    cout << "Введите " << n << " целые числа: " << endl;
+    
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+        
+    }
+    
+    int even = 0, odd = 0;
+    for (int i = 0; i < n; i++) {
+        if (arr[i] % 2 == 0) 
+           even++;
+        else
+           odd++;
+           
+    } 
+    
+    int summ3 = 0;
+    for (int i = 0; i < n; i++) {
+        if (arr[i] % 3 == 0)
+        summ3 += arr[i];
+        
+    }
+    
+    int firstnumber = arr[0];
+    int first = 0;
+    for (int i = 0; i < n; i++) {
+        if (firstnumber != 0 && arr[i] % firstnumber == 0)
+        first++;
+        
+    }
+    
+    int maximumnumber = 0;
+    int maximumvalue = arr[0];
+    
+    for (int i = 0; i < n; i++) {
+        int count = 0;
+        for (int j = 1; j <= abs(arr[i]); j++) {
+            if (arr[i] % j == 0) 
+            count++;
+            
+        }
+        
+        if (count > maximumnumber) {
+            maximumnumber = count;
+            maximumvalue = arr[i];
+            
+        }
+    }
+    
+    double summ = 0;
+    for (int i = 0; i < n; i++) {
+        summ += arr[i];
+        
+    }
+    
+    double averagearif = summ / n;
+    
+    bool exists = false;
+    for (int i = 0; i < n; i++) {
+        if (arr[i] % 2 != 0 && arr[i] % 5 == 0 && arr[i] > averagearif) {
+            exists = true;
+            break;
+            
+        }
+    }
+    
+    cout << "Четные числа: " << even << endl;
+    cout << "Нечетные числа: " << odd << endl;
+    cout << "Сумма чисел, которая кратна 3: " << summ3 << endl;
+    cout << "Количество чисел, что кратны первому элементу: " << first << endl;
+    cout << "Число с наибольшим количеством делителей: " << maximumvalue << endl;
+    
+    if (exists)
+       cout << "В вашем массиве есть число, которое является нечетным, делится на 5 и больше, чем средне арифметическое значение" << endl;
+       
+       return 0;
+       
+}
+
+//#endif
+
