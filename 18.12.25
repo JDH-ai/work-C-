@@ -131,3 +131,17 @@ int main() {
     
 }
 
+//Task 8
+
+int main() {
+    int service[5] = {30, 31, 32, 33, 34};
+    int* p = service;
+    
+    int index = 4;
+    
+    std::cout << "Через индекс: " << service[index] << std::endl;
+    std::cout << "Через смещение указателем: " << (index + *p) << std::endl;
+    
+    return 0;
+    
+}
