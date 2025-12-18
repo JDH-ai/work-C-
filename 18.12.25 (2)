@@ -3,11 +3,16 @@ using namespace std;
 
 //Task 1
 
+int totalcost(int price, int quantity) {
+        return price * quantity;
+        
+}
+
 int main() {
     int price = 500;
     int quantity = 5;
-    
-    std::cout << "Итоговая стоимость: " << price * quantity << std::endl;
+       
+    std::cout << "Итоговая стоимость: " << totalcost(price, quantity) << std::endl;
     std::cout << "Исходная цена: " << price << std::endl;
     std::cout << "Исходное количество: " << quantity << std::endl;
     
