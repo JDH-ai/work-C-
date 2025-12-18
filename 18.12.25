@@ -98,7 +98,7 @@ int main() {
     
 }
 
-//Task 5
+//Task 6
 
 int main() {
     int library[5] = {9, 2, 7, 3, 4};
@@ -111,6 +111,21 @@ int main() {
     }
     
     std::cout << std::endl;
+    
+    return 0;
+    
+}
+
+//Task 7
+
+int main() {
+    int laboratory[8] = {15, 16, 17, 18, 19, 20, 21, 22};
+    int* first = &laboratory[0];
+    int* second = &laboratory[5];
+    
+    int diff = second - first;
+    
+    std::cout << "Количество элементов между двумя указателями: " << diff << std::endl;
     
     return 0;
     
