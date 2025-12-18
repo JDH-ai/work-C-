@@ -31,3 +31,26 @@ int main() {
     return 0;
     
 }
+
+//Task 3
+
+int main() {
+    int revenue[5] = {1000, 1100, 1200, 1300, 1400};
+    int* p = revenue;
+    
+    int summ = 0;
+    
+    std::cout << "Все выручки: ";
+    
+    for (int i = 0; i < 5; i++) {
+        std::cout << *p << " ";
+        summ += *p;
+        p++;
+    }
+    
+    std::cout << std::endl;
+    std::cout << "Сумма всех значений: " << summ << std::endl;
+    
+    return 0;
+    
+}
