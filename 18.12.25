@@ -9,9 +9,24 @@ int main() {
     
     (*p)++;
     
-    cout << "Адрес переменной: " << &x << endl;
-    cout << "Значение переменной: " << x << endl;
-    cout << "Значение через указатель: " << *p << endl;
+    std::cout << "Адрес переменной: " << &x << std::endl;
+    std::cout << "Значение переменной: " << x << std::endl;
+    std::cout << "Значение через указатель: " << *p << std::endl;
+    
+    return 0;
+    
+}
+
+//Task 2
+
+int main() {
+    double repair = 300000;
+    double* p = &repair;
+    
+    *p = 500000;
+    
+    std::cout << "Обычный способ: " << &repair << std::endl;
+    std::cout << "Способ через указатель: " << *p << std::endl;
     
     return 0;
     
