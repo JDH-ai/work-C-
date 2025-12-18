@@ -20,3 +20,22 @@ int main() {
     
 }
 
+//Task 2
+
+void hill(int &health, int treatment) {
+    health += treatment;
+}
+
+int main() {
+    int health = 35;
+    
+    std::cout << "Здоровье в игре до полученного лечения: " << health << std::endl;
+    
+    hill(health, 15);
+    
+    std::cout << "Здоровье в игре после получения лечения: " << health << std::endl;
+    
+    return 0;
+    
+}
+
