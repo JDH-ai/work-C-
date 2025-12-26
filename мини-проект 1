@@ -1,0 +1,90 @@
+#include <iostream>
+using namespace std;
+#include <string>
+
+int main() {
+    int a, b, c, d, e;
+    double score = 0;
+    string answer;
+    string city;
+    string size;
+    double vat;
+    double multiplier = 1.0;
+
+    cout << "Введите стоимость булочки для вашего бургера: " << endl;
+    cin >> a;
+
+    cout << "Введите стоимость котлеты для вашего бургера: " << endl;
+    cin >> b;
+
+    cout << "Введите стоимость овощей для вашего бургера: " << endl;
+    cin >> c;
+
+    cout << "Введите стоимость сыра для вашего бургера: " << endl;
+    cin >> d;
+
+    cout << "Введите стоимость соуса для вашего бургера: " << endl;
+    cin >> e;
+
+    score = a + b + c + d + e;
+
+    cout << "Желаете ли вы добавить бекон в ваш бургер? (да/нет): " << endl;
+    cin >> answer;
+    if (answer == "да") {
+        score += 40;
+    }
+    
+    cout << "Желаете ли вы добавить картофель в ваш бургер? (да/нет): " << endl;
+    cin >> answer;
+    if (answer == "да") {
+        score += 50;
+    }
+    
+    cout << "Желаете ли вы добавить дополнительный соус в ваш бургер? (да/нет): " << endl;
+    cin >> answer;
+    if (answer == "да") {
+        score += 20;
+    }
+    
+    cout << "Введите свой город: " << endl;
+    cin >> city;
+    
+    if (city == "Самара") score += 50;
+    else if (city == "Нижний Новгород") score += 80;
+    else if (city == "Санкт-Петербург") score += 120;
+    else if (city == "Москва") score += 160;
+    else {
+        cout << "Этого города нет в списках нашего ресторана" << endl;
+        return 0;
+    }
+    
+    cout << "Введите размер вашего бургера (маленький, средний, большой): " << endl;
+    cin >> size;
+    
+    if (size == "маленький") {
+        multiplier = 1.0;
+    } else if (size == "средний") {
+        multiplier = 1.3;
+    } else if (size == "большой") {
+        multiplier = 1.6;
+    } else {
+        cout << "Такого размера нет в меню нашего ресторана" << endl;
+        return 0;
+    }
+    
+    score *= multiplier;
+    
+    cout << "Введите НДС (в %): " << endl;
+    cin >> vat;
+    
+    if (vat < 0 || vat > 100) {
+        cout << "Неправильное значение НДС" << endl;
+        return 0;
+    }
+    
+    score += score * vat / 100;
+    
+    cout << "Итоговая цена вашего бургера: " << score << "рублей";
+    return 0;
+    
+}
